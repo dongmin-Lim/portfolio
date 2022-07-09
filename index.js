@@ -8,6 +8,10 @@ function darkModeHandler() {
     document.querySelector(".dark_mode").style.backgroundColor =
       "rgba(100, 100, 100, 0.7)";
     document.querySelector(".dark_mode").style.color = "white";
+    document.querySelector(".info_1").style.color = "black";
+    document.querySelector("#line").style.borderColor = "black";
+    document.querySelector(".a1").style.color = "black";
+    document.querySelector(".a2").style.color = "black";
     document.querySelector(".dark_mode").innerHTML = "다크모드";
   } else if (document.querySelector(".dark_mode").innerHTML == "다크모드") {
     // 주간 => 다크
@@ -18,6 +22,10 @@ function darkModeHandler() {
     document.querySelector(".dark_mode").style.backgroundColor =
       "rgba(255, 255, 255, 0.6)";
     document.querySelector(".dark_mode").style.color = "black";
+    document.querySelector(".info_1").style.color = "white";
+    document.querySelector("#line").style.borderColor = "white";
+    document.querySelector(".a1").style.color = "white";
+    document.querySelector(".a2").style.color = "white";
     document.querySelector(".dark_mode").innerHTML = "주간모드";
   }
 }
