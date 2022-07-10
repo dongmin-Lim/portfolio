@@ -10,35 +10,58 @@
     </style>
   </head>
   <body>
-    <div class="nav"><h1>프론트엔드 개발자를 꿈꾸는 임동민의 자기소개서</h1></div>
+    <div class="nav">
+      <a href="#title_1">PROFILE</a>
+      &nbsp;
+      <a href="#title_2">TECH</a>
+      &nbsp;
+      <a href="#title_3">TALK</a>
+      &nbsp; &nbsp;
+    </div>
     <div class="main">
       <img
         class="profile_img"
         src="./img/IMG_1069.JPG"
         oncontextmenu="alert('마우스 오른쪽 클릭을 금지합니다.'); return false"
       />
-      <div class="infomation">
-        <div class="info">
-          <div>
-            <div class="info_1">이름</div>
-            <div class="info_1">관심 개발 분야</div>
-            <div class="info_1">instagram</div>
+      <div id="title_1" style="font-size: 20px">
+        PROFILE
+        <div class="profile">
+          <div class="left_profile">
+            <div class="info">이름</div>
+            <div class="info">관심 개발 분야</div>
+            <div class="info">git</div>
+            <div class="info">instagram</div>
           </div>
-          <div id="line" style="border-left: 3px solid white">
-            <div class="info_1">임동민</div>
-            <div class="info_1">Front-End</div>
-            <div class="info_1">
-              <a class="a1" href="https://www.instagram.com/dm_0216/" target="_blank"
-                >Me 😊</a
+          <div class="right_profile" style="border-left: 3px solid white">
+            <div class="info">임동민</div>
+            <div class="info">Front-End</div>
+            <div class="info">
+              <a href="https://www.instagram.com/dm_0216/" target="_blank"> HERE! </a>
+            </div>
+            <div class="info">
+              <a
+                class="instagram1"
+                href="https://www.instagram.com/dm_0216/"
+                target="_blank"
               >
+                Me 😊
+              </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a class="a2" href="https://www.instagram.com/pepsi._.1009/" target="_blank"
-                >My Dog 🐶</a
+              <a
+                class="instagram2"
+                href="https://www.instagram.com/pepsi._.1009/"
+                target="_blank"
               >
+                My Dog 🐶
+              </a>
             </div>
           </div>
         </div>
-        <div class="info_2">
+      </div>
+      <div id="title_2" style="font-size: 20px">
+        TECH
+        <div class="tech">
           <img class="tech_img" src="./img/html.png" />
           <img class="tech_img" src="./img/css.png" />
           <img class="tech_img" src="./img/js.png" /><br />
@@ -47,17 +70,20 @@
           <img class="tech_img" src="./img/git.png" />
         </div>
       </div>
-    </div>
-    <div class="introduce">
-      <div class="introduce_1">
-        <h2 style="font-size: 35px">동료 레이서에게...</h2>
-        6개월의 장기 레이스동안 지치지 않고 끝까지<br />
-        모두 좋은 결과 얻어서 갔으면 좋겠습니다.
-      </div>
-      <div class="introduce_2">
-        <h2 style="font-size: 35px">나의 관심사</h2>
-        자동차, 신발, 전자기기...<br />
-        저와 비슷한 관심사가 있으시다면 언제든지 연락주세요ㅎㅎ
+      <div id="title_3" style="font-size: 20px">
+        TALK
+        <div class="introduce">
+          <div class="left_introduce">
+            <h3 style="font-size: 18px">동료 레이서에게...</h3>
+            6개월의 장기 레이스동안 지치지 않고 끝까지<br />
+            모두 좋은 결과 얻어서 갔으면 좋겠습니다.
+          </div>
+          <div class="right_introduce">
+            <h3 style="font-size: 18px">나의 관심사</h3>
+            자동차, 신발, 전자기기...<br />
+            저와 비슷한 관심사가 있으시다면 언제든지 연락주세요ㅎㅎ
+          </div>
+        </div>
       </div>
     </div>
     <button class="dark_mode" onclick="darkModeHandler()">주간모드</button>
