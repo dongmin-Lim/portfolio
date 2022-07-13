@@ -1,0 +1,16 @@
+.tech {
+  text-align: center;
+  background-color: rgba(100, 100, 100, 0.2);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.tech_img {
+  width: 80px;
+  margin: 30px 50px;
+  transition: all 0.2s linear;
+}
+
+.tech_img:hover {
+  transform: scale(1.4);
+}
