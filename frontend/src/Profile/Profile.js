@@ -2,14 +2,14 @@ import styles from "./Profile.module.css";
 
 function Profile() {
   return (
-    <div>
+    <div style={{ fontSize: "40px", textAlign: "center" }}>
+      PROFILE
       <img
         className={styles.profile_img}
         src="./img/IMG_1069.JPG"
         onContextMenu={(e) => e.preventDefault()}
         alt="profileimg"
       />
-      PROFILE
       <div className={styles.profile}>
         <div className={styles.left_profile}>
           <div className={styles.info}>이름</div>
@@ -50,6 +50,14 @@ function Profile() {
             </a>
           </div>
         </div>
+      </div>
+      <div className={styles.pageSelect}>
+        <a className={styles.nextPage} href="/">
+          PREVIOUS
+        </a>
+        <a className={styles.nextPage} href="/tech">
+          NEXT
+        </a>
       </div>
     </div>
   );

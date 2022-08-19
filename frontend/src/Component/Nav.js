@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "./Nav.module.css";
 
 function Nav() {
