@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import styles from "./Nav.module.css";
 
 function Nav() {
@@ -7,6 +6,7 @@ function Nav() {
       <a href="/">HOME</a>
       <a href="/profile">PROFILE</a>
       <a href="/tech">TECH</a>
+      <a href="/portfolio">PORTFOLIO</a>
       <a href="/talk">TALK</a>
     </nav>
   );
