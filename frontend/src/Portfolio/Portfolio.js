@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-function Tech() {
+function Portfolio() {
   return (
     <Frame id="title_2">
       TECH
@@ -30,7 +30,7 @@ function Tech() {
   );
 }
 
-export default Tech;
+export default Portfolio;
 
 const Frame = styled.div`
   font-size: "40px";
