@@ -13,15 +13,6 @@ function Tech() {
         <TechImg src="./img/ts.png" alt="ts" />
         <TechImg src="./img/git.png" alt="git" />
       </TechBox>
-      PORTFOLIO
-      <Portfolio>
-        {/* <a>https://github.com/Jin-Mook/IT_Library</a> */}
-        <div>- 백엔드 개발자로 활동중인 제 친구와 협업하여 영화 리뷰서비스를 제작했습니다.</div>
-      </Portfolio>
-      <Portfolio>
-        {/* <a>https://github.com/dongmin-Lim/movie_review_service</a> */}
-        <div>- 백엔드 개발자로 활동중인 제 친구와 협업하여 책 리뷰서비스를 제작했습니다.</div>
-      </Portfolio>
       <PageSelect>
         <NextPage href="/profile">PREVIOUS</NextPage>
         <NextPage href="/talk">NEXT</NextPage>
@@ -51,15 +42,6 @@ const TechImg = styled.img`
   :hover {
     transform: scale(1.2);
   }
-`;
-
-const Portfolio = styled.div`
-  font-size: 25px;
-  text-align: left;
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: rgba(100, 100, 100, 0.2);
-  border-radius: 20px;
 `;
 
 const PageSelect = styled.div`
