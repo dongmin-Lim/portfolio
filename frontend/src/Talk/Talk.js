@@ -6,14 +6,14 @@ function Talk() {
       TALK
       <Talk_0>
         <Talk_1>
-          <h3 style={{ fontSize: "30px" }}>전하고 싶은 말</h3>
+          <h3>전하고 싶은 말</h3>
           비록 현재엔 기술이 부족하고 서투른 개발자일지 몰라도
           <br />
           꾸준히 성장하며 언젠가 거대해질 날을 꿈꾸며 꾸준히 노력하겠습니다.
         </Talk_1>
-        <Talk_2 style={{ fontSize: "40px" }}>
-          <h3 style={{ fontSize: "30px" }}>나의 관심사</h3>
-          <div style={{ fontSize: "25px" }}>
+        <Talk_2>
+          <h3>나의 관심사</h3>
+          <div>
             🏎 <br />
             어렸을 때 부터 자동차를 굉장히 좋아했습니다. <br />
             <br />
@@ -28,7 +28,7 @@ function Talk() {
         </Talk_2>
       </Talk_0>
       <PageSelect>
-        <NextPage href="/tech">PREVIOUS</NextPage>
+        <NextPage href="/portfolio">PREVIOUS</NextPage>
       </PageSelect>
     </Frame>
   );
@@ -51,6 +51,9 @@ const Talk_1 = styled.div`
   font-size: 25px;
   padding: 20px;
   margin-bottom: 20px;
+  h3 {
+    font-size: 30px;
+  }
 `;
 
 const Talk_2 = styled.div`
@@ -58,6 +61,9 @@ const Talk_2 = styled.div`
   border-radius: 20px;
   font-size: 25px;
   padding: 20px;
+  h3 {
+    font-size: 30px;
+  }
 `;
 
 const PageSelect = styled.div`
