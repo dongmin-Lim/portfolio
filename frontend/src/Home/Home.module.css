@@ -1,0 +1,56 @@
+h1 {
+  font-size: 30px;
+  min-width: 11px;
+  white-space: nowrap;
+  margin: 0;
+  position: fixed;
+  color: transparent;
+}
+
+h1::before {
+  content: "프론트엔드 개발자를 꿈꾸고 있는 임동민의 자기소개 페이지 입니다.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+  border-right: 1px solid black;
+  animation: typing 2s steps(120);
+}
+
+.nextPage {
+  display: block;
+  position: relative;
+  top: 100px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: rgba(100, 100, 100, 0.2);
+  border-radius: 20px;
+  font-size: 35px;
+  animation: fadein 4.5s; /* 4.5초 뒤 등장 */
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
