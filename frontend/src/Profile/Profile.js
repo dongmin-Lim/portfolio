@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 function Profile() {
   return (
     <Frame>
-      PROFILE
+      <Title>PROFILE</Title>
       <Box>
         <ProfileImg src="./img/IMG_1069.JPG" onContextMenu={(e) => e.preventDefault()} alt="profile_img" />
         <ProfileBox>
@@ -50,6 +50,11 @@ export default Profile;
 const Frame = styled.div`
   font-size: "40px";
   text-align: "center";
+`;
+
+const Title = styled.div`
+  font-size: 28px;
+  margin-bottom: 10px;
 `;
 
 const Box = styled.div`
