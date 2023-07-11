@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import PageSelector from "../Component/PageSelector";
 
 function Talk() {
   return (
@@ -27,9 +28,7 @@ function Talk() {
           </div>
         </Talk_2>
       </Talk_0>
-      <PageSelect>
-        <NextPage href="/portfolio">PREVIOUS</NextPage>
-      </PageSelect>
+      {PageSelector("/portfolio")}
     </Frame>
   );
 }
@@ -69,20 +68,4 @@ const Talk_2 = styled.div`
   h3 {
     font-size: 30px;
   }
-`;
-
-const PageSelect = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 20px;
-`;
-
-const NextPage = styled.a`
-  height: 70px;
-  margin: 20px 0;
-  text-align: center;
-  line-height: 70px;
-  background-color: rgba(100, 100, 100, 0.2);
-  border-radius: 20px;
-  font-size: 25px;
 `;

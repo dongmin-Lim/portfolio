@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import PageSelector from "../Component/PageSelector";
 
 function Profile() {
   return (
@@ -37,10 +38,7 @@ function Profile() {
           </ProfileRight>
         </ProfileBox>
       </Box>
-      <PageSelect>
-        <NextPage href="/profile">PREVIOUS</NextPage>
-        <NextPage href="/talk">NEXT</NextPage>
-      </PageSelect>
+      {PageSelector("/", "/tech")}
     </Frame>
   );
 }
@@ -89,20 +87,4 @@ const ProfileRight = styled.div`
   padding-left: 20px;
   font-size: 25px;
   text-align: left;
-`;
-
-const PageSelect = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 20px;
-`;
-
-const NextPage = styled.a`
-  height: 70px;
-  margin: 20px 0;
-  text-align: center;
-  line-height: 70px;
-  background-color: rgba(100, 100, 100, 0.2);
-  border-radius: 20px;
-  font-size: 25px;
 `;

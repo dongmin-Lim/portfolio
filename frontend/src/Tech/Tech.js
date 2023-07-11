@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import PageSelector from "../Component/PageSelector";
 
 function Tech() {
   return (
@@ -13,10 +14,7 @@ function Tech() {
         <TechImg src="./img/ts.png" alt="ts" />
         <TechImg src="./img/git.png" alt="git" />
       </TechBox>
-      <PageSelect>
-        <NextPage href="/profile">PREVIOUS</NextPage>
-        <NextPage href="/talk">NEXT</NextPage>
-      </PageSelect>
+      {PageSelector("/profile", "/portfolio")}
     </Frame>
   );
 }
@@ -37,7 +35,6 @@ const TechBox = styled.div`
   text-align: center;
   background-color: rgba(100, 100, 100, 0.2);
   border-radius: 20px;
-  margin-bottom: 20px;
 `;
 
 const TechImg = styled.img`
@@ -47,20 +44,4 @@ const TechImg = styled.img`
   :hover {
     transform: scale(1.2);
   }
-`;
-
-const PageSelect = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 20px;
-`;
-
-const NextPage = styled.a`
-  height: 70px;
-  margin: 0;
-  text-align: center;
-  line-height: 70px;
-  background-color: rgba(100, 100, 100, 0.2);
-  border-radius: 20px;
-  font-size: 25px;
 `;
