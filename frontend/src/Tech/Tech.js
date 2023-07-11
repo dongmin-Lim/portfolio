@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 function Tech() {
   return (
     <Frame id="title_2">
-      TECH
+      <Title>TECH</Title>
       <TechBox>
         <TechImg src="./img/html.png" alt="html" />
         <TechImg src="./img/css.png" alt="css" />
@@ -26,6 +26,11 @@ export default Tech;
 const Frame = styled.div`
   font-size: "40px";
   text-align: "center";
+`;
+
+const Title = styled.div`
+  font-size: 28px;
+  margin-bottom: 10px;
 `;
 
 const TechBox = styled.div`

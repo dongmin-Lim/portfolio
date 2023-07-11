@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 function Portfolio() {
   return (
     <Frame id="title_2">
-      PORTFOLIO
+      <Title>PORTFOLIO</Title>
       <List>
         {/* <a>https://github.com/Jin-Mook/IT_Library</a> */}
         <div>- 백엔드 개발자로 활동중인 제 친구와 협업하여 영화 리뷰서비스를 제작했습니다.</div>
@@ -25,6 +25,11 @@ export default Portfolio;
 const Frame = styled.div`
   font-size: "40px";
   text-align: "center";
+`;
+
+const Title = styled.div`
+  font-size: 28px;
+  margin-bottom: 10px;
 `;
 
 const List = styled.div`

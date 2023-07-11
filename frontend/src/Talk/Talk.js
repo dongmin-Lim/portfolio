@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 function Talk() {
   return (
     <Frame id="title_3">
-      TALK
+      <Title>TALK</Title>
       <Talk_0>
         <Talk_1>
           <h3>전하고 싶은 말</h3>
@@ -39,6 +39,11 @@ export default Talk;
 const Frame = styled.div`
   font-size: "40px";
   text-align: "center";
+`;
+
+const Title = styled.div`
+  font-size: 28px;
+  margin-bottom: 10px;
 `;
 
 const Talk_0 = styled.div`
