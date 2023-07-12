@@ -16,6 +16,16 @@ const PageSelect = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 20px;
   margin-top: 20px;
+  a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: white;
+  }
 `;
 
 const NextPage = styled.a`

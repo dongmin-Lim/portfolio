@@ -48,6 +48,16 @@ export default Profile;
 const Frame = styled.div`
   font-size: "40px";
   text-align: "center";
+  a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: white;
+  }
 `;
 
 const Title = styled.div`
