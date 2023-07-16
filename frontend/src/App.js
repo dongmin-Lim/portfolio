@@ -1,15 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./Component/Nav";
 import Profile from "./Profile/Profile";
-import styles from "./App.module.css";
 import Tech from "./Tech/Tech";
 import Portfolio from "./Portfolio/Portfolio";
 import Talk from "./Talk/Talk";
 import Home from "./Home/Home";
+import GlobalStyle from "./GlobalStyle";
 
 function App() {
   return (
-    <div className={styles.main}>
+    <div>
+      <GlobalStyle />
       <Nav />
       <Router>
         <Routes>

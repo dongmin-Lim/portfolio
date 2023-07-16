@@ -50,13 +50,11 @@ const Frame = styled.div`
   text-align: "center";
   a {
     text-decoration: none;
-    color: white;
     margin-right: 20px;
   }
 
   a:hover {
     text-decoration: underline;
-    color: white;
   }
 `;
 
