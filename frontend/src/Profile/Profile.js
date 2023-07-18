@@ -50,7 +50,6 @@ const Frame = styled.div`
   text-align: "center";
   a {
     text-decoration: none;
-    margin-right: 20px;
   }
 
   a:hover {

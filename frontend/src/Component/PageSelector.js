@@ -12,6 +12,7 @@ function PageSelector(prev, next) {
 export default PageSelector;
 
 const PageSelect = styled.div`
+width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 20px;
@@ -19,7 +20,6 @@ const PageSelect = styled.div`
   a {
     text-decoration: none;
     color: white;
-    margin-right: 20px;
   }
 
   a:hover {

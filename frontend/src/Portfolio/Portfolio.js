@@ -26,7 +26,6 @@ const Frame = styled.div`
   a {
     text-decoration: none;
     color: white;
-    margin-right: 20px;
   }
 
   a:hover {
