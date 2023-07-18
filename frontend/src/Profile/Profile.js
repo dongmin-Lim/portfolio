@@ -6,7 +6,11 @@ function Profile() {
     <Frame>
       <Title>PROFILE</Title>
       <Box>
-        <ProfileImg src="./img/IMG_1069.JPG" onContextMenu={(e) => e.preventDefault()} alt="profile_img" />
+        <ProfileImg
+          src="./img/IMG_1069.JPG"
+          onContextMenu={(e) => e.preventDefault()}
+          alt="profile_img"
+        />
         <ProfileBox>
           <ProfileLeft>
             <div>이름</div>
@@ -20,25 +24,41 @@ function Profile() {
             <div>ESFJ</div>
             <div>Front-End</div>
             <div>
-              <a href="https://github.com/dongmin-Lim" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/dongmin-Lim"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 HERE!
               </a>
             </div>
             <div>
-              <a href="https://www.instagram.com/dm_0216/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.instagram.com/dm_0216/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Me 😊
               </a>
-              <a href="https://www.instagram.com/pepsi._.1009/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.instagram.com/pepsi._.1009/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 My Dog 🐶
               </a>
-              <a href="https://www.instagram.com/dongmini_r53/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.instagram.com/dongmini_r53/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 My Car 🚙
               </a>
             </div>
           </ProfileRight>
         </ProfileBox>
       </Box>
-      {PageSelector("/", "/tech")}
+      {PageSelector(undefined, "/tech")}
     </Frame>
   );
 }

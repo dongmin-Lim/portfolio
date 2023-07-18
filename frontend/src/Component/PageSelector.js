@@ -3,8 +3,8 @@ import { styled } from "styled-components";
 function PageSelector(prev, next) {
   return (
     <PageSelect>
-      <NextPage href={prev}>PREVIOUS</NextPage>
-      <NextPage href={next}>NEXT</NextPage>
+      {prev && <NextPage href={prev}>PREVIOUS</NextPage>}
+      {next && <NextPage href={next}>NEXT</NextPage>}
     </PageSelect>
   );
 }
@@ -12,7 +12,7 @@ function PageSelector(prev, next) {
 export default PageSelector;
 
 const PageSelect = styled.div`
-width: 1200px;
+  width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 20px;
