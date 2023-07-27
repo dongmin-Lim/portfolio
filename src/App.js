@@ -15,7 +15,7 @@ function App() {
       <Nav />
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/tech" element={<Tech />} />
           <Route path="/portfolio" element={<Portfolio />} />
