@@ -22,7 +22,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://dongmin-lim.github.io/portfolio/home",
+  "homepage": "https://dongmin-lim.github.io/portfolio/",
   "eslintConfig": {
     "extends": [
       "react-app",
