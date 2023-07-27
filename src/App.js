@@ -6,13 +6,14 @@ import Portfolio from "./Portfolio/Portfolio";
 import Talk from "./Talk/Talk";
 import Home from "./Home/Home";
 import GlobalStyle from "./GlobalStyle";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div>
       <GlobalStyle />
       <Nav />
-      <Router>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
@@ -20,7 +21,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/talk" element={<Talk />} />
         </Routes>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
