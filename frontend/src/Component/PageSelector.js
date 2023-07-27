@@ -3,7 +3,11 @@ import { styled } from "styled-components";
 function PageSelector(prev, next) {
   return (
     <PageSelect>
-      {prev && <NextPage href={prev}>PREVIOUS</NextPage>}
+      {prev ? (
+        <NextPage href={prev}>PREVIOUS</NextPage>
+      ) : (
+        <NonNextPage></NonNextPage>
+      )}
       {next && <NextPage href={next}>NEXT</NextPage>}
     </PageSelect>
   );
@@ -34,6 +38,14 @@ const NextPage = styled.a`
   text-align: center;
   line-height: 70px;
   background-color: rgba(100, 100, 100, 0.2);
+  border-radius: 20px;
+  font-size: 25px;
+`;
+
+const NonNextPage = styled.div`
+  height: 70px;
+  margin: 0;
+  background-color: rgba(100, 100, 100, 0);
   border-radius: 20px;
   font-size: 25px;
 `;
