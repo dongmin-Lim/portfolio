@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { Title } from "../Profile/Profile";
 import PageSelector from "../Component/PageSelector";
 
 function Tech() {
@@ -24,11 +25,6 @@ export default Tech;
 const Frame = styled.div`
   font-size: "40px";
   text-align: "center";
-`;
-
-const Title = styled.div`
-  font-size: 28px;
-  margin-bottom: 10px;
 `;
 
 const TechBox = styled.div`

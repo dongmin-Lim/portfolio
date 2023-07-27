@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { Title } from "../Profile/Profile";
 import PageSelector from "../Component/PageSelector";
 
 function Talk() {
@@ -19,11 +20,13 @@ function Talk() {
             어렸을 때 부터 자동차를 굉장히 좋아했습니다. <br />
             <br />
             👟 <br />
-            대학교 진학 후 신발에 관심을 가지게 되면서 꾸미는 법을 알게 되었습니다. <br />
+            대학교 진학 후 신발에 관심을 가지게 되면서 꾸미는 법을 알게
+            되었습니다. <br />
             <br />
             💻 <br />
             컴퓨터 다루는 것을 좋아했습니다. <br />
-            자동차라는 기계를 좋아하다보니 자연스럽게 컴퓨터에 관심을 가지게 되었고,
+            자동차라는 기계를 좋아하다보니 자연스럽게 컴퓨터에 관심을 가지게
+            되었고,
             <br />그 것이 이어져 코딩이라는 세계에 빠졌습니다.
           </div>
         </Talk_2>
@@ -38,11 +41,6 @@ export default Talk;
 const Frame = styled.div`
   font-size: "40px";
   text-align: "center";
-`;
-
-const Title = styled.div`
-  font-size: 28px;
-  margin-bottom: 10px;
 `;
 
 const Talk_0 = styled.div`

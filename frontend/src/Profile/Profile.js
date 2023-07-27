@@ -16,7 +16,7 @@ function Profile() {
             <div>이름</div>
             <div>MBTI</div>
             <div>관심 개발 분야</div>
-            <div>git</div>
+            <div>GitHub</div>
             <div>instagram</div>
           </ProfileLeft>
           <ProfileRight style={{ borderLeft: "3px solid white" }}>
@@ -77,8 +77,8 @@ const Frame = styled.div`
   }
 `;
 
-const Title = styled.div`
-  font-size: 28px;
+export const Title = styled.div`
+  font-size: 40px;
   margin-bottom: 10px;
 `;
 
@@ -90,13 +90,14 @@ const Box = styled.div`
 
 const ProfileImg = styled.img`
   display: block;
-  width: 500px;
+  width: 300px;
+  height: 100%;
   border-radius: 20px;
 `;
 
 const ProfileBox = styled.div`
   width: 100%;
-  height: 100%;
+  height: 700px;
   display: grid;
   grid-template-columns: 1fr 3fr;
   background-color: rgba(100, 100, 100, 0.2);
@@ -105,13 +106,22 @@ const ProfileBox = styled.div`
 `;
 
 const ProfileLeft = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   padding-right: 20px;
-  font-size: 25px;
+  font-size: 30px;
   text-align: right;
 `;
 
 const ProfileRight = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   padding-left: 20px;
-  font-size: 25px;
+  font-size: 30px;
   text-align: left;
+  a {
+    margin-right: 30px;
+  }
 `;
