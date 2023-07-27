@@ -7,6 +7,7 @@ function Profile() {
       <Title>PROFILE</Title>
       <Box>
         <ProfileImg
+          // src="./img/IMG_1069.JPG"
           src="./img/IMG_1069.JPG"
           onContextMenu={(e) => e.preventDefault()}
           alt="profile_img"
