@@ -4,11 +4,11 @@ function PageSelector(prev, next) {
   return (
     <PageSelect>
       {prev ? (
-        <NextPage href={prev}>PREVIOUS</NextPage>
+        <NextPage href={`/resume${prev}`}>PREVIOUS</NextPage>
       ) : (
         <NonNextPage></NonNextPage>
       )}
-      {next && <NextPage href={next}>NEXT</NextPage>}
+      {next && <NextPage href={`/resume${next}`}>NEXT</NextPage>}
     </PageSelect>
   );
 }

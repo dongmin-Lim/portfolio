@@ -3,11 +3,11 @@ import styled from "styled-components";
 function Nav() {
   return (
     <Frame>
-      <a href="/">HOME</a>
-      <a href="/profile">PROFILE</a>
-      <a href="/tech">TECH</a>
-      <a href="/portfolio">PORTFOLIO</a>
-      <a href="/talk">TALK</a>
+      <a href="/resume">HOME</a>
+      <a href="/resume/profile">PROFILE</a>
+      <a href="/resume/tech">TECH</a>
+      <a href="/resume/portfolio">PORTFOLIO</a>
+      <a href="/resume/talk">TALK</a>
     </Frame>
   );
 }
